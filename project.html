@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IP Address Checker</title>
+    <link rel="stylesheet" href="project.css" />
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <a href="#" class="logo">IP Validator</a>
+        <nav class="navbar">
+            <a href="index.html">Back</a>
+            
+        </nav>
+    </header>
+
+    <!-- Spacer -->
+    <section class="home"></section>
+
+    <!-- Glass Box -->
+    <div class="intro-box">
+        <h2>Check IP Address</h2>
+
+        <p>
+            Enter an IPv4 address below to check whether it is valid or not.
+            Each section must be between <strong>0 and 255</strong>.
+        </p>
+
+        <form onsubmit="validateIP(event)">
+            <input 
+                type="text" 
+                id="ipInput"
+                placeholder="Example: 192.168.1.1"
+                required
+            />
+
+            <button type="submit">Validate IP</button>
+
+            <p id="result"></p>
+        </form>
+    </div>
+
+    <script src="project.js"></script>
+</body>
+</html>
